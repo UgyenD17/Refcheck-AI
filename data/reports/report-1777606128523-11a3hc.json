@@ -1,0 +1,109 @@
+{
+  "id": "report-1777606128523-11a3hc",
+  "created_at": "2026-05-01T03:28:48.523Z",
+  "type": "clip_review",
+  "sport": "soccer",
+  "original_call": "Handball",
+  "play_description": "",
+  "clip": {
+    "name": "videoplayback.mp4",
+    "type": "video/mp4",
+    "size": 1553884
+  },
+  "analysis": {
+    "verdict": "Inconclusive",
+    "ref_ai_decision": "Inconclusive",
+    "confidence": "Low",
+    "play_observation": "The clip frames were uploaded, but AI video-frame analysis failed and no reviewer notes were provided.",
+    "reasoning": "RefCheck cannot decide foul or no foul from the uploaded clip without a working vision model response. The retrieved IFAB Laws chunks are attached for review.",
+    "relevant_rules": [
+      {
+        "id": "soccer-law-12-5-5",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "### Cautions for unsporting behaviour There are different circumstances when a player must be cautioned for unsporting behaviour including if a player: - attempts to deceive the referee, e.g. by feigning injury or pretending to have been fouled (simulation) - changes places with the goalkeeper during play or without the referee’s permission (see Law 3) - commits in a reckless manner a direct free kick offence - handles the ball to interfere with or stop a promising attack, except where the referee awards a penalty kick for a non-deliberate handball offence - denies the opposing team a goal or an obvious goal-scoring opportunity and the referee awards a penalty kick for a non-deliberate handball offence - commits any other offence which interferes with or stops a promising attack, except where the referee awards a penalty kick for an offence which was an attempt to play the ball or a challenge",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-8",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "a throw-in but suddenly leaving it to a team-mate to take - delaying leaving the field of play when being substituted - excessively delaying a restart - kicking or carrying the ball away, or provoking a confrontation by deliberately touching the ball after the referee has stopped play - taking a free kick from the wrong position to force a retake ### Sending-off offences A player, substitute or substituted player who commits any of the following offences is sent off: - denying the opposing team a goal or an obvious goal-scoring opportunity by committing a deliberate handball offence (except a goalkeeper within their penalty area) - denying the opposing team a goal or an obvious goal-scoring opportunity by committing a non-deliberate handball offence outside their own penalty area - denying a goal or an obvious goal-scoring opportunity to an opponent whose overall movement is towards the offender’s goal by an",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-9",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "offence punishable by a free kick (unless as outlined below) - serious foul play - biting or spitting at someone - violent conduct - using offensive, insulting or abusive language and/or action(s) - receiving a second caution in the same match - entering the video operation room (VOR) A player, substitute or substituted player who has been sent off must leave the vicinity of the field of play and the technical area. ### Denying a goal or an obvious goal-scoring opportunity (DOGSO) Where a player commits an offence against an opponent within their own penalty area which denies an opponent an obvious goal-scoring opportunity and the referee awards a penalty kick, the offender is cautioned if the offence was an attempt to play the ball or a challenge for the ball; in all other circumstances (e.g. holding, pulling, pushing, no possibility to play the ball etc.), the offending player must",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-4",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "referee’s permission - failing to respect the required distance when play is restarted with a dropped ball, corner kick, free kick or throw-in - persistent offences (no specific number or pattern of offences constitutes ‘persistent’) - unsporting behaviour - entering the referee review area (RRA) - excessively using the ‘review’ (TV screen) signal A substitute or substituted player is cautioned if guilty of: - delaying the restart of play - dissent by word or action - entering or re-entering the field of play without the referee’s permission - unsporting behaviour - entering the referee review area (RRA) - excessively using the ‘review’ (TV screen) signal Where two separate cautionable offences are committed (even in close proximity), they should result in two cautions, for example if a player enters the field of play without the required permission and commits a reckless tackle or stops a promising attack with a foul/handball, etc.",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-10",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "be sent off. Where a player denies the opposing team a goal or an obvious goal-scoring opportunity by committing a deliberate handball offence, the player is sent off wherever the offence occurs (except a goalkeeper within their penalty area). Where a player denies the opposing team a goal or an obvious goal-scoring opportunity by committing a non-deliberate handball offence and the referee awards a penalty kick, the offender is cautioned. A player, sent-off player, substitute or substituted player who enters the field of play without the required referee’s permission and interferes with play or an opponent and denies the opposing team a goal or an obvious goal-scoring opportunity is guilty of a sending-off offence. The following must be considered: - distance between the offence and the goal - general direction of the play - likelihood of keeping or gaining control of the ball - location and number of defenders ###",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-3",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "interfering with or stopping a promising attack, the player is not cautioned. Advantage should not be applied in situations involving serious foul play, violent conduct or a second cautionable offence unless there is a clear opportunity to score a goal. The referee must send off the player when the ball is next out of play, but if the player plays the ball or challenges/interferes with an opponent, the referee will stop play, send off the player and restart with an indirect free kick, unless the player committed a more serious offence. If a defender starts holding an attacker outside the penalty area and continues holding inside the penalty area, the referee must award a penalty kick. ### Cautionable offences A player is cautioned if guilty of: - delaying the restart of play - dissent by word or action - entering, re-entering or deliberately leaving the field of play without the",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-6",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "for the ball - denies an opponent an obvious goal-scoring opportunity by committing an offence which was an attempt to play the ball or a challenge for the ball and the referee awards a penalty kick - handles the ball in an attempt to score a goal (whether or not the attempt is successful) or in an unsuccessful attempt to prevent a goal - makes unauthorised marks on the field of play - plays the ball when leaving the field of play after being given permission to leave - shows a lack of respect for the game - initiates a deliberate trick for the ball to be passed (including from a free kick or goal kick) to the goalkeeper with the head, chest, knee etc. to circumvent the Law, whether or not the goalkeeper touches the ball with the hands; the goalkeeper is cautioned if responsible for initiating the deliberate",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-2",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "to show a card Once the referee has decided to caution or send off a player, play must not be restarted until the sanction has been administered, unless the non-offending team takes a quick free kick, has a clear goal-scoring opportunity and the referee has not started the disciplinary sanction procedure. The sanction is administered at the next stoppage; if the offence was denying the opposing team an obvious goal-scoring opportunity, the player is cautioned; if the offence interfered with or stopped a promising attack, the player is not cautioned. ### Advantage If the referee plays the advantage for an offence for which a caution/sending-off would have been issued had play been stopped, this caution/sending-off must be issued when the ball is next out of play. However, if the offence was denying the opposing team an obvious goal-scoring opportunity the player is cautioned for unsporting behaviour; if the offence was",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-2-1",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.1 Direct free kick",
+        "text": "A direct free kick is awarded if a player commits any of the following offences against an opponent in a manner considered by the referee to be careless, reckless or using excessive force: - charges - jumps at - kicks or attempts to kick - pushes - strikes or attempts to strike (including head-butt) - tackles or challenges - trips or attempts to trip If an offence involves contact, it is penalised by a direct free kick. - Careless is when a player shows a lack of attention or consideration when making a challenge or acts without precaution. No disciplinary sanction is needed - Reckless is when a player acts with disregard to the danger to, or consequences for, an opponent and must be cautioned - Using excessive force is when a player exceeds the necessary use of force and/or endangers the safety of an opponent and must be sent",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-13",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "team - deliberately entering the technical area of the opposing team (non-confrontational) - dissent by word or action including: - throwing/kicking drinks bottles or other objects - action(s) which show(s) a clear lack of respect for the match official(s) e.g. sarcastic clapping - entering the referee review area (RRA) - excessively/persistently gesturing for a red or yellow card - excessively showing the ‘TV signal’ for a VAR ‘review’ - acting in a provocative or inflammatory manner - persistent unacceptable behaviour (including repeated warning offences) - showing a lack of respect for the game ### Sending-off Sending-off offences include (but are not limited to): - delaying the restart of play by the opposing team e.g. holding onto the ball, kicking the ball away, obstructing the movement of a player - deliberately leaving the technical area to: - show dissent towards, or remonstrate with, a match official - act in a provocative",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      }
+    ],
+    "ai_used": false,
+    "clip": {
+      "name": "videoplayback.mp4",
+      "type": "video/mp4",
+      "size": 1553884
+    },
+    "warning": "AI video analysis failed."
+  }
+}

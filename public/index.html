@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RefCheck AI</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <main class="app-shell">
+
+      <!-- LEFT PANEL -->
+      <section class="panel input-panel">
+        <div>
+          <p class="eyebrow">RefCheck AI</p>
+          <h1>Soccer Clip Review</h1>
+        </div>
+
+        <form id="review-form">
+
+          <!-- SPORT -->
+          <label>
+            Sport
+            <select name="sport" required>
+              <option value="soccer">Soccer</option>
+            </select>
+          </label>
+
+          <!-- ORIGINAL CALL -->
+          <label>
+            Original referee call
+            <input
+              name="original_call"
+              type="text"
+              value="No handball"
+              placeholder="Foul, no foul, offside, handball..."
+              required
+            />
+          </label>
+
+          <!-- FILE UPLOAD -->
+          <label>
+            Upload clip
+            <input name="clip" type="file" accept="video/*" />
+          </label>
+
+          <!-- VIDEO PATH (🔥 NEW) -->
+          <label>
+            Or video path
+            <input
+              name="video_path"
+              type="text"
+              placeholder="/local-clips/videoplayback.mp4"
+            />
+          </label>
+
+          <!-- VIDEO PREVIEW -->
+          <video
+            id="clip-preview"
+            class="clip-preview"
+            controls
+            muted
+            playsinline
+            hidden
+          ></video>
+
+          <!-- REVIEWER NOTES -->
+          <label>
+            Reviewer notes
+            <textarea
+              name="play_description"
+              rows="6"
+              placeholder="Optional: add neutral notes only, like 'possible handball near goal line'. Leave blank to let the model decide from the clip."
+            ></textarea>
+          </label>
+
+          <!-- SUBMIT -->
+          <button type="submit">Analyze Clip</button>
+          <p id="status" class="status" role="status"></p>
+
+        </form>
+      </section>
+
+      <!-- RIGHT PANEL -->
+      <section class="panel result-panel" aria-live="polite">
+
+        <div class="result-header">
+          <p class="eyebrow">Verdict</p>
+          <strong id="verdict">Ready</strong>
+        </div>
+
+        <dl class="metrics">
+          <div>
+            <dt>Confidence</dt>
+            <dd id="confidence">-</dd>
+          </div>
+          <div>
+            <dt>Ref AI Decision</dt>
+            <dd id="ref-ai-decision">-</dd>
+          </div>
+          <div>
+            <dt>Mode</dt>
+            <dd id="ai-used">-</dd>
+          </div>
+          <div>
+            <dt>Report</dt>
+            <dd id="report-id">-</dd>
+          </div>
+        </dl>
+
+        <!-- OBSERVED PLAY -->
+        <div>
+          <h2>Observed Play</h2>
+          <p id="play-observation">
+            Upload a clip or enter a video path to analyze.
+          </p>
+        </div>
+
+        <!-- REASONING -->
+        <div>
+          <h2>Reasoning</h2>
+          <p id="reasoning">
+            Submit a clip to compare the call against the IFAB Laws of the Game.
+          </p>
+        </div>
+
+        <!-- RULES -->
+        <div>
+          <h2>Relevant Rules</h2>
+          <div id="rules" class="rules-list"></div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

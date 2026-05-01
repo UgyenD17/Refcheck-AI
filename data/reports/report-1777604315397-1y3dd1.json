@@ -1,0 +1,108 @@
+{
+  "id": "report-1777604315397-1y3dd1",
+  "created_at": "2026-05-01T02:58:35.397Z",
+  "type": "clip_review",
+  "sport": "soccer",
+  "original_call": "No call",
+  "play_description": "A defender on the goal line raises his arm and uses his hand to stop the ball from going into the net.",
+  "clip": {
+    "name": "videoplayback.mp4",
+    "type": "video/mp4",
+    "size": 1572864
+  },
+  "analysis": {
+    "verdict": "Bad Call",
+    "ref_ai_decision": "Foul",
+    "confidence": "Medium",
+    "play_observation": "A defender on the goal line raises his arm and uses his hand to stop the ball from going into the net.",
+    "reasoning": "The retrieved 12.1 Direct free kick chunk states that handball is a direct free kick offence and explains that a player is penalised when the hand/arm position makes the body unnaturally bigger or the player deliberately touches the ball with the hand/arm. A defender using an arm to stop a ball from entering the goal is therefore a handball offence if the contact occurred while the ball was in play.",
+    "relevant_rules": [
+      {
+        "id": "soccer-law-11-2-3",
+        "law_number": "11",
+        "law_title": "Offside",
+        "section": "11.2 Offside offence",
+        "text": "‘deliberately played’ the ball. The following criteria should be used, as appropriate, as indicators that a player was in control of the ball and, as a result, can be considered to have ‘deliberately played’ the ball: - The ball travelled from distance and the player had a clear view of it - The ball was not moving quickly - The direction of the ball was not unexpected - The player had time to coordinate their body movement, i.e. it was not a case of instinctive stretching or jumping, or a movement that achieved limited contact/control - A ball moving on the ground is easier to play than a ball in the air A ‘save’ is when a player stops, or attempts to stop, a ball which is going into or very close to the goal with any part of the body except the hands/arms (unless the goalkeeper within the penalty",
+        "source": "https://www.theifab.com/laws/latest/offside/"
+      },
+      {
+        "id": "soccer-law-12-2-3",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.1 Direct free kick",
+        "text": "when it has made their body unnaturally bigger. A player is considered to have made their body unnaturally bigger when the position of their hand/arm is not a consequence of, or justifiable by, the player’s body movement for that specific situation. By having their hand/arm in such a position, the player takes a risk of their hand/arm being hit by the ball and being penalised - scores in the opponents’ goal: - directly from their hand/arm, even if accidental, including by the goalkeeper - immediately after the ball has touched their hand/arm, even if accidental The goalkeeper has the same restrictions on handling the ball as any other player outside the penalty area. If the goalkeeper handles the ball inside their penalty area when not permitted to do so, an indirect free kick is awarded but there is no disciplinary sanction. However, if the offence is playing the ball a",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-11",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "Serious foul play A tackle or challenge that endangers the safety of an opponent or uses excessive force or brutality must be sanctioned as serious foul play. Any player who lunges at an opponent in challenging for the ball from the front, from the side or from behind using one or both legs, with excessive force or endangers the safety of an opponent is guilty of serious foul play. ### Violent conduct Violent conduct is when a player uses or attempts to use excessive force or brutality against an opponent when not challenging for the ball, or against a team-mate, team official, match official, spectator or any other person, regardless of whether contact is made. In addition, a player who, when not challenging for the ball, deliberately strikes an opponent or any other person on the head or face with the hand or arm, is guilty of violent conduct unless",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-11-1-1",
+        "law_number": "11",
+        "law_title": "Offside",
+        "section": "11.1 Offside position",
+        "text": "It is not an offence to be in an offside position. A player is in an offside position if: - any part of the head, body or feet is in the opponents’ half (excluding the halfway line) and - any part of the head, body or feet is nearer to the opponents’ goal line than both the ball and the second-last opponent The hands and arms of all players, including the goalkeepers, are not considered. For the purposes of determining offside, the upper boundary of the arm is in line with the bottom of the armpit. A player is not in an offside position if level with the: - second-last opponent or - last two opponents",
+        "source": "https://www.theifab.com/laws/latest/offside/"
+      },
+      {
+        "id": "soccer-law-12-2-2",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.1 Direct free kick",
+        "text": "off A direct free kick is awarded if a player commits any of the following offences: - a handball offence (except for the goalkeeper within their penalty area) - holds an opponent - impedes an opponent with contact - bites or spits at someone on the team lists or a match official - throws an object at the ball, an opponent or a match official, or makes contact with the ball with a held object See also offences in Law 3. ### Handling the ball For the purposes of determining handball offences, the upper boundary of the arm is in line with the bottom of the armpit. Not every touch of a player’s hand/arm with the ball is an offence. It is an offence if a player: - deliberately touches the ball with their hand/arm, for example moving the hand/arm towards the ball - touches the ball with their hand/arm",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-14-3-4",
+        "law_number": "14",
+        "law_title": "The Penalty Kick",
+        "section": "14.2 Offences and sanctions",
+        "text": "taken: - the kicker touches the ball again before it has touched another player: - an indirect free kick (or direct free kick for a handball offence) is awarded - the ball is touched by an outside agent as it moves forward: - the kick is retaken unless the ball is going into the goal and the interference does not prevent the goalkeeper or a defending player playing the ball, in which case the goal is awarded if the ball enters the goal (even if contact was made with the ball) unless the interference was by the attacking team. - the ball rebounds into the field of play from the goalkeeper, the crossbar or the goalposts and is then touched by an outside agent: - the referee stops play - play is restarted with a dropped ball at the position where it touched the outside agent",
+        "source": "https://www.theifab.com/laws/latest/the-penalty-kick/"
+      },
+      {
+        "id": "soccer-law-5-3-6",
+        "law_number": "5",
+        "law_title": "The Referee",
+        "section": "5.3 Powers and duties",
+        "text": "match to continue, or stop, suspend or abandon it depending on the severity of the incident - a spectator blows a whistle which interferes with play - play is stopped and restarted with a dropped ball - an extra ball, other object or animal enters the field of play during the match, the referee must: - stop play (and restart with a dropped ball) only if it interferes with play - unless the ball is going into the goal and the interference does not prevent a defending player playing the ball, the goal is awarded if the ball enters the goal (even if contact was made with the ball) unless the interference was by the attacking team - allow play to continue if it does not interfere with play and have it removed at the earliest possible opportunity - allows no unauthorised persons to enter the field of play",
+        "source": "https://www.theifab.com/laws/latest/the-referee/"
+      },
+      {
+        "id": "soccer-law-12-2-4",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.1 Direct free kick",
+        "text": "second time (with or without the hand/arm) after a restart before it touches another player, the goalkeeper must be sanctioned if the offence stops a promising attack or denies an opponent or the opposing team a goal or an obvious goal-scoring opportunity.",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-3-2",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.2 Indirect free kick",
+        "text": "indirect free kick is awarded if a goalkeeper, inside their penalty area, commits any of the following offences: - controls the ball with the hand/arm for more than six seconds before releasing it - touches the ball with the hand/arm after releasing it and before it has touched another player - touches the ball with the hand/arm, unless the goalkeeper has clearly kicked or attempted to kick the ball to release it into play, after: - it has been deliberately kicked to the goalkeeper by a team-mate - receiving it directly from a throw-in taken by a team-mate A goalkeeper is considered to be in control of the ball with the hand(s) when: - the ball is between the hands or between the hand and any surface (e.g. ground, own body) or by touching it with any part of the hands or arms, except if the ball rebounds from the",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-3-3",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.2 Indirect free kick",
+        "text": "goalkeeper or the goalkeeper has made a save - holding the ball in the outstretched open hand - bouncing it on the ground or throwing it in the air A goalkeeper cannot be challenged by an opponent when in control of the ball with the hand(s). ### Playing in a dangerous manner Playing in a dangerous manner is any action that, while trying to play the ball, threatens injury to someone (including the player themself) and includes preventing a nearby opponent from playing the ball for fear of injury. A scissors or bicycle kick is permissible provided that it is not dangerous to an opponent. ### Impeding the progress of an opponent without contact Impeding the progress of an opponent means moving into the opponent’s path to obstruct, block, slow down or force a change of direction when the ball is not within playing distance of either player. All players",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      }
+    ],
+    "ai_used": false,
+    "clip": {
+      "name": "videoplayback.mp4",
+      "type": "video/mp4",
+      "size": 1572864
+    }
+  }
+}

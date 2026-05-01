@@ -1,0 +1,16 @@
+{
+  "name": "refcheck-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "ingest:soccer": "node scripts/ingest-soccer-rules.js",
+    "ingest:soccer:law12": "node scripts/ingest-soccer-law12.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

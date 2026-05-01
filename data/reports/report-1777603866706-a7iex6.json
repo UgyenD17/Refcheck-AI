@@ -1,0 +1,108 @@
+{
+  "id": "report-1777603866706-a7iex6",
+  "created_at": "2026-05-01T02:51:06.706Z",
+  "type": "clip_review",
+  "sport": "soccer",
+  "original_call": "Foul",
+  "play_description": "Is this a handball or not?",
+  "clip": {
+    "name": "videoplayback.mp4",
+    "type": "video/mp4",
+    "size": 1553884
+  },
+  "analysis": {
+    "verdict": "Inconclusive",
+    "ref_ai_decision": "Inconclusive",
+    "confidence": "Low",
+    "play_observation": "Is this a handball or not?",
+    "reasoning": "The retrieved IFAB law chunks are relevant, but the play description does not include enough facts to decide whether the original call was correct.",
+    "relevant_rules": [
+      {
+        "id": "soccer-law-11-2-2",
+        "law_number": "11",
+        "law_title": "Offside",
+        "section": "11.2 Offside offence",
+        "text": "deliberately saved by any opponent *The first point of contact of the ‘play’ or ‘touch’ of the ball should be used ; however, when the ball is thrown by the goalkeeper, the last point of contact should be used . A player in an offside position receiving the ball from an opponent who deliberately played* the ball, including by deliberate handball, is not considered to have gained an advantage, unless it was a deliberate save by any opponent. *‘Deliberate play’ (excluding deliberate handball) is when a player has control of the ball with the possibility of: - passing the ball to a team-mate; - gaining possession of the ball; or - clearing the ball (e.g. by kicking or heading it) If the pass, attempt to gain possession or clearance by the player in control of the ball is inaccurate or unsuccessful, this does not negate the fact that the player",
+        "source": "https://www.theifab.com/laws/latest/offside/"
+      },
+      {
+        "id": "soccer-law-12-2-2",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.1 Direct free kick",
+        "text": "off A direct free kick is awarded if a player commits any of the following offences: - a handball offence (except for the goalkeeper within their penalty area) - holds an opponent - impedes an opponent with contact - bites or spits at someone on the team lists or a match official - throws an object at the ball, an opponent or a match official, or makes contact with the ball with a held object See also offences in Law 3. ### Handling the ball For the purposes of determining handball offences, the upper boundary of the arm is in line with the bottom of the armpit. Not every touch of a player’s hand/arm with the ball is an offence. It is an offence if a player: - deliberately touches the ball with their hand/arm, for example moving the hand/arm towards the ball - touches the ball with their hand/arm",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-6-3",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.5 Restart of play after fouls and misconduct",
+        "text": "object (boot, shinguard etc.) held in the hand, play is restarted with a direct free kick (or penalty kick). If a player who is on or off the field of play throws or kicks an object (other than the match ball) at an opposing player, or throws or kicks an object (including a ball) at an opposing substitute, substituted or sent-off player, team official, or a match official or the match ball, play is restarted with a direct free kick from the position where the object struck or would have struck the person or the ball. If this position is off the field of play, the free kick is taken on the nearest point on the boundary line; a penalty kick is awarded if this is within the offender’s penalty area. If a substitute, substituted or sent-off player, player temporarily off the field of play or team official throws or",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-2-3",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.1 Direct free kick",
+        "text": "when it has made their body unnaturally bigger. A player is considered to have made their body unnaturally bigger when the position of their hand/arm is not a consequence of, or justifiable by, the player’s body movement for that specific situation. By having their hand/arm in such a position, the player takes a risk of their hand/arm being hit by the ball and being penalised - scores in the opponents’ goal: - directly from their hand/arm, even if accidental, including by the goalkeeper - immediately after the ball has touched their hand/arm, even if accidental The goalkeeper has the same restrictions on handling the ball as any other player outside the penalty area. If the goalkeeper handles the ball inside their penalty area when not permitted to do so, an indirect free kick is awarded but there is no disciplinary sanction. However, if the offence is playing the ball a",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-3-1",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.2 Indirect free kick",
+        "text": "An indirect free kick is awarded if a player: - plays in a dangerous manner - impedes the progress of an opponent without any contact being made - is guilty of dissent, using offensive, insulting or abusive language and/or action(s) or other verbal offences - prevents the goalkeeper from releasing the ball from the hands or kicks or attempts to kick the ball when the goalkeeper is in the process of releasing it - initiates a deliberate trick for the ball to be passed (including from a free kick or goal kick) to the goalkeeper with the head, chest, knee etc. to circumvent the Law, whether or not the goalkeeper touches the ball with the hands; the goalkeeper is penalised if responsible for initiating the deliberate trick - commits any other offence, not mentioned in the Laws, for which play is stopped to caution or send off a player An",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-3-3",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.2 Indirect free kick",
+        "text": "goalkeeper or the goalkeeper has made a save - holding the ball in the outstretched open hand - bouncing it on the ground or throwing it in the air A goalkeeper cannot be challenged by an opponent when in control of the ball with the hand(s). ### Playing in a dangerous manner Playing in a dangerous manner is any action that, while trying to play the ball, threatens injury to someone (including the player themself) and includes preventing a nearby opponent from playing the ball for fear of injury. A scissors or bicycle kick is permissible provided that it is not dangerous to an opponent. ### Impeding the progress of an opponent without contact Impeding the progress of an opponent means moving into the opponent’s path to obstruct, block, slow down or force a change of direction when the ball is not within playing distance of either player. All players",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-12-5-5",
+        "law_number": "12",
+        "law_title": "Fouls and Misconduct",
+        "section": "12.4 Disciplinary action",
+        "text": "### Cautions for unsporting behaviour There are different circumstances when a player must be cautioned for unsporting behaviour including if a player: - attempts to deceive the referee, e.g. by feigning injury or pretending to have been fouled (simulation) - changes places with the goalkeeper during play or without the referee’s permission (see Law 3) - commits in a reckless manner a direct free kick offence - handles the ball to interfere with or stop a promising attack, except where the referee awards a penalty kick for a non-deliberate handball offence - denies the opposing team a goal or an obvious goal-scoring opportunity and the referee awards a penalty kick for a non-deliberate handball offence - commits any other offence which interferes with or stops a promising attack, except where the referee awards a penalty kick for an offence which was an attempt to play the ball or a challenge",
+        "source": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      {
+        "id": "soccer-law-13-1-1",
+        "law_number": "13",
+        "law_title": "Free Kicks",
+        "section": "13.1 Types of free kick",
+        "text": "Direct and indirect free kicks are awarded to the opposing team of a player, substitute, substituted or sent-off player, or team official guilty of an offence. ### Indirect free kick signal The referee indicates an indirect free kick by raising the arm above the head; this signal is maintained until the kick has been taken and the ball touches another player, goes out of play or it is clear that a goal cannot be scored directly. An indirect free kick must be retaken if the referee fails to signal that the kick is indirect and the ball is kicked directly into the goal. ### Ball enters the goal - if a direct free kick is kicked directly into the opponents’ goal, a goal is awarded - if an indirect free kick is kicked directly into the opponents’ goal, a goal kick is awarded - if a direct or indirect free",
+        "source": "https://www.theifab.com/laws/latest/free-kicks/"
+      },
+      {
+        "id": "soccer-law-14-3-4",
+        "law_number": "14",
+        "law_title": "The Penalty Kick",
+        "section": "14.2 Offences and sanctions",
+        "text": "taken: - the kicker touches the ball again before it has touched another player: - an indirect free kick (or direct free kick for a handball offence) is awarded - the ball is touched by an outside agent as it moves forward: - the kick is retaken unless the ball is going into the goal and the interference does not prevent the goalkeeper or a defending player playing the ball, in which case the goal is awarded if the ball enters the goal (even if contact was made with the ball) unless the interference was by the attacking team. - the ball rebounds into the field of play from the goalkeeper, the crossbar or the goalposts and is then touched by an outside agent: - the referee stops play - play is restarted with a dropped ball at the position where it touched the outside agent",
+        "source": "https://www.theifab.com/laws/latest/the-penalty-kick/"
+      },
+      {
+        "id": "soccer-law-16-3-1",
+        "law_number": "16",
+        "law_title": "The Goal Kick",
+        "section": "16.2 Offences and sanctions",
+        "text": "If, after the ball is in play, the kicker touches the ball again before it has touched another player, an indirect free kick is awarded; if the kicker commits a handball offence: - a direct free kick is awarded - a penalty kick is awarded if the offence occurred inside the kicker’s penalty area, unless the kicker was the goalkeeper, in which case an indirect free kick is awarded If, when a goal kick is taken, any opponents are inside the penalty area because they did not have time to leave, the referee allows play to continue. If an opponent who is in the penalty area when the goal kick is taken, or enters the penalty area before the ball is in play, touches or challenges for the ball before it is in play, the goal kick is retaken. If a player enters the penalty area before the ball is",
+        "source": "https://www.theifab.com/laws/latest/the-goal-kick/"
+      }
+    ],
+    "ai_used": false,
+    "clip": {
+      "name": "videoplayback.mp4",
+      "type": "video/mp4",
+      "size": 1553884
+    }
+  }
+}
