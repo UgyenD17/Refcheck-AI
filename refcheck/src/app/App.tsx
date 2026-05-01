@@ -177,62 +177,63 @@ Be objective, specific, and focus only on what is visually observable. Do not ma
   return data.candidates?.[0]?.content?.parts?.[0]?.text ?? 'No description returned.';
 }
 
-// ─── Step 2: Send Gemini description + rules to Claude for verdict ────────────
-async function getVerdictFromClaude(
+// ─── Step 2: Send play description + rules to Gemini for verdict ─────────────
+async function getVerdictFromGemini(
   playDescription: string,
   sport: string,
   refCall: string,
   notes: string
 ): Promise<AnalysisResult> {
+  const GEMINI_API_KEY = (import.meta as Record<string, unknown> & { env: Record<string, string> }).env.VITE_GEMINI_API_KEY;
+  if (!GEMINI_API_KEY) throw new Error('VITE_GEMINI_API_KEY is not set in your .env file');
+
   const rules = SPORT_RULES[sport] ?? SPORT_RULES['Soccer'];
 
-  const systemPrompt = `You are RefCheck AI — an expert sports officiating analyst. You receive a neutral description of a play and the official rulebook, then deliver a structured verdict.
+  const prompt = `You are RefCheck AI — an expert sports officiating analyst.
 
 RULEBOOK FOR ${sport.toUpperCase()}:
 ${rules}
 
-Respond ONLY with a valid JSON object. No markdown, no preamble, no backticks. Schema:
-{
-  "verdict": "Fair Call" | "Bad Call" | "Inconclusive",
-  "confidence": "High" | "Medium" | "Low",
-  "decision": "<brief name of the call, e.g. Handball, Offside, Foul>",
-  "observedPlay": "<1-2 sentence objective summary of what happened>",
-  "reasoning": "<2-3 sentence explanation citing the specific rule>",
-  "relevantRules": [
-    { "law": "<law name>", "description": "<specific rule text that applies>" }
-  ]
-}`;
-
-  const userMessage = `SPORT: ${sport}
+SPORT: ${sport}
 REFEREE'S ORIGINAL CALL: ${refCall || 'Not specified'}
 REVIEWER NOTES: ${notes || 'None'}
 
 PLAY DESCRIPTION FROM VIDEO ANALYSIS:
 ${playDescription}
 
-Analyze this play against the rulebook and return your verdict as JSON.`;
+Analyze this play against the rulebook and return ONLY a valid JSON object. No markdown, no backticks, no extra text. Use exactly this schema:
+{
+  "verdict": "Fair Call",
+  "confidence": "High",
+  "decision": "Handball",
+  "observedPlay": "One or two sentence summary of what happened.",
+  "reasoning": "Two or three sentence explanation citing the specific rule.",
+  "relevantRules": [
+    { "law": "Law 12 - Handball", "description": "The specific rule text that applies." }
+  ]
+}
+verdict must be exactly one of: "Fair Call", "Bad Call", "Inconclusive"
+confidence must be exactly one of: "High", "Medium", "Low"`;
 
-  // Use Vite proxy in dev (/api/anthropic → api.anthropic.com with key injected).
-  // In production, replace this URL with your own backend endpoint.
-  const claudeUrl = import.meta.env.VITE_CLAUDE_ENDPOINT || '/api/anthropic/v1/messages'
-  const response = await fetch(claudeUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 1000,
-      system: systemPrompt,
-      messages: [{ role: 'user', content: userMessage }],
-    }),
-  });
+  const response = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { temperature: 0.1, maxOutputTokens: 1024 },
+      }),
+    }
+  );
 
   if (!response.ok) {
     const err = await response.json();
-    throw new Error(`Claude API error: ${err.error?.message || response.statusText}`);
+    throw new Error(`Gemini API error: ${err.error?.message || response.statusText}`);
   }
 
   const data = await response.json();
-  const text = data.content?.[0]?.text ?? '{}';
+  const text = data.candidates?.[0]?.content?.parts?.[0]?.text ?? '{}';
   const clean = text.replace(/```json|```/g, '').trim();
   const parsed = JSON.parse(clean);
 
@@ -240,7 +241,7 @@ Analyze this play against the rulebook and return your verdict as JSON.`;
     verdict: parsed.verdict ?? 'Inconclusive',
     confidence: parsed.confidence ?? 'Low',
     decision: parsed.decision ?? 'Unknown',
-    mode: 'Gemini 2.0 Flash + Claude Sonnet',
+    mode: 'Gemini 2.0 Flash (fully free)',
     observedPlay: parsed.observedPlay ?? '',
     reasoning: parsed.reasoning ?? '',
     relevantRules: parsed.relevantRules ?? [],
@@ -267,8 +268,8 @@ async function runAnalysisPipeline(
   onStatus('Step 1 of 2 — Gemini is watching the clip...');
   const playDescription = await analyzeWithGemini(videoFile, sport, refCall, notes);
 
-  onStatus('Step 2 of 2 — Claude is ruling on the play...');
-  const result = await getVerdictFromClaude(playDescription, sport, refCall, notes);
+  onStatus('Step 2 of 2 — Gemini is making the call...');
+  const result = await getVerdictFromGemini(playDescription, sport, refCall, notes);
 
   return result;
 }
@@ -424,7 +425,7 @@ export default function App() {
                 <span className="text-gray-400">→</span>
                 <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full font-medium">Gemini 2.0 Flash reads video</span>
                 <span className="text-gray-400">→</span>
-                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full font-medium">Claude Sonnet rules on the play</span>
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full font-medium">Gemini rules on the play</span>
                 <span className="text-gray-400">→</span>
                 <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full font-medium">✅ Verdict</span>
               </div>
@@ -620,7 +621,7 @@ export default function App() {
 
             {videoFile && (
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-xs text-blue-800">
-                <strong>Live AI mode:</strong> Requires <code>VITE_GEMINI_API_KEY</code> in your <code>.env</code> file. Claude API is proxied automatically.
+                <strong>Live AI mode:</strong> Requires <code>VITE_GEMINI_API_KEY</code> in your <code>.env</code> file.
               </div>
             )}
 
@@ -664,7 +665,7 @@ export default function App() {
                   <div className="flex items-center gap-2 text-xs text-gray-500">
                     <span className="bg-purple-100 text-purple-700 px-2 py-1 rounded-full">Gemini 2.0 Flash</span>
                     <span>→</span>
-                    <span className="bg-orange-100 text-orange-700 px-2 py-1 rounded-full">Claude Sonnet</span>
+                    <span className="bg-orange-100 text-orange-700 px-2 py-1 rounded-full">Gemini Flash</span>
                   </div>
                 )}
               </div>
